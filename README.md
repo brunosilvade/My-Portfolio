@@ -1,31 +1,46 @@
-# React + TypeScript + Vite
+Leia-me
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Introdução
 
-Currently, two official plugins are available:
+Este é um portfólio construído com Node.js e React.js. Ele foi projetado para demonstrar minhas habilidades e experiência em desenvolvimento web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pré-requisitos
 
-## Expanding the ESLint configuration
+Node.js instalado (versão 16 ou superior)
+npm ou yarn instalado
+Um editor de código
+Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone o repositório:
+git clone https://github.com/brunosilvade/portfolio.git
+Acesse o diretório do projeto:
+cd portfolio
+Instale as dependências:
+npm install
+Configuração
 
-- Configure the top-level `parserOptions` property like this:
+Variáveis de ambiente: Crie um arquivo .env na raiz do projeto e defina as seguintes variáveis de ambiente:
+PORT: A porta na qual o servidor será executado (por exemplo, 3000)
+NODE_ENV: O ambiente no qual o aplicativo está sendo executado (por exemplo, development ou production)
+Execução
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Para executar o aplicativo em modo de desenvolvimento:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# My-Portfolio
+npm start
+Para executar o aplicativo em modo de produção:
+
+npm run build
+npm start:prod
+Estrutura do projeto
+
+client: Contém o código React.js do portfólio.
+server: Contém o código Node.js do servidor.
+public: Contém os arquivos estáticos do aplicativo.
+src: Contém os arquivos de origem do React.js.
+Contribuindo
+
+Sinta-se à vontade para contribuir com este projeto enviando solicitações de pull.
+
+Licença
+
+Este projeto está licenciado sob a Licença MIT.
